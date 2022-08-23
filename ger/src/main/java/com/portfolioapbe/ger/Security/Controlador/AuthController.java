@@ -64,7 +64,7 @@ public class AuthController {
             roles.add(sRol.getByRolName(RolName.ROLE_ADMIN).get());
         user.setRoles(roles);
         sUser.save(user);
-        return new ResponseEntity(new Message("Usuario guardado"),HttpStatus.OK);
+        return new ResponseEntity(new Message("Usuario guardado"),HttpStatus.CREATED);
     }
     @PostMapping("/login")
     public ResponseEntity<DtoJwt> login(@Valid @RequestBody UserLogin userLogin, BindingResult bindingResult){

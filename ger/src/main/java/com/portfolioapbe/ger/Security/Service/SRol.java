@@ -18,5 +18,8 @@ public class SRol {
     public Optional<Rol> getByRolName(RolName rolName){
         return rRol.findByRolName(rolName);
     }
+    public void save(Rol rol){
+       rRol.save(rol);
+    }
 
 }
