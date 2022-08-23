@@ -19,18 +19,19 @@ public class CAbout {
     public CAbout(SAbout sAbout) {
         this.sAbout = sAbout;
     }
+    @CrossOrigin(origins = "https://portfolioapger.web.app")
     @GetMapping("/allabout")
     public ResponseEntity<List<About>> findAbout() {
         List<About> abouts = sAbout.findAbout();
         return new ResponseEntity<>(abouts, HttpStatus.OK);
     }
-
+    @CrossOrigin(origins = "https://portfolioapger.web.app")
     @GetMapping("/id/{id}")
     public ResponseEntity<About> findAbout(@PathVariable("id")Long id){
         About about = sAbout.findAboutById(id);
         return new ResponseEntity<>(about, HttpStatus.OK);
     }
-
+    @CrossOrigin(origins = "https://portfolioapger.web.app")
     @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/edit/{id}")
     public ResponseEntity<About> editAbout(@RequestBody About about){
