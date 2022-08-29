@@ -20,9 +20,14 @@ Actualmente se encuentra subida a la web la <em>version 2.0</em> del porfolio, c
 <h4>Gestion de Base de datos:</h4>
 <ul>
    <li> Xampp Control Panel ( https://www.apachefriends.org/es/download.html ): versión 8.1.6-0 servidor local para DB </li>
-   <li> MySQL Workbench ( https://www.mysql.com/downloads ): versión 8.0 CE creacion y gestion de DB </li>
-   <li> phpMyAdmin ( https://www.phpmyadmin.net/ ): version online, como refuerzo de workbench </li>
+   <li> MySQL Workbench ( https://www.mysql.com/downloads ): versión 8.0 CE creación y gestión de DB </li>
+   <li> phpMyAdmin ( https://www.phpmyadmin.net/ ): versión online, como refuerzo de workbench </li>
    <li> Postman x86 (https://app.getpostman.com/app/download/win64): versión 9.29.0 para realizar http requests </li>
 </ul>
 
-<h3>Se implemento sistema de LogIn con JWT</h3>
+<h3>Se implementó sistema de LogIn con JWT</h3>
+
+<h3>Diagrama de entidad relación:</h3>
+
+
+<img src="DER - Portfolio.png">
